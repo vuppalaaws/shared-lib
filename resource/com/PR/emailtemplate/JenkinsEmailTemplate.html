@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Jenkins Build Results - $applicationName</title>
+    <style type="text/css">
+           table{
+               width: 100%;
+           }
+
+           .headerResponsiveBottom{
+       width: 100%;
+       border:none;border-bottom:solid #C8C8C8;
+           }
+           .headerResponsiveTop{
+       width: 100%;
+       border:none;border-top:solid #C8C8C8;
+           }
+           .Responsive{
+       width: 100%;
+       border-bottom: 2px solid #f2f2f2;
+       border-top: 2px solid #f2f2f2;
+           }
+           .infoImage{
+              width: 50%;
+           }
+           td.infoImage > img{
+               align="middle";
+           }
+           .infoTable{
+               background-color: #000000;
+               text-align: center;
+               font-weight: bold;
+               padding: 10px 20px;
+               color: #ffffff;
+           }
+           .mySpace{
+               width:100%;
+               margin-top: 35px;
+               margin-bottom: 15px;
+               border-bottom: 2px solid #f2f2f2;
+           }
+           .JournalTitle{
+               background-color: #F6F6F6;
+               text-align: center;
+               font-weight: bold;
+               padding: 10px 20px;
+               color: #000;
+           }
+
+           .container{
+
+               max-width: 100%;
+           }
+           .shift{
+               margin-left:15%;
+           }
+
+           .table-striped tbody tr:nth-of-type(odd) {
+                background-color: rgba(0,0,0,.05);
+           }
+           .bd{
+               border: solid #f7f7f9;
+               padding: 1.5rem;
+               margin-right: 0;
+               margin-bottom: 0;
+               margin-left: 0;
+               border-width: .2rem;
+           }
+
+           .table td, .table th {
+               padding: .75rem;
+               vertical-align: top;
+               border-top: 1px solid #eceeef;
+          }
+           .bold{
+               font-weight:bold;
+               width: 30%;
+               color:#000000;
+           }
+
+           .fontColor{
+               color:#000000;
+           }
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <table class="headerResponsivetop">
+            <tbody>
+                <tr>
+                    <td class="infoImage"><img alt="" src="add weblink"></td>
+                    <td class="infoTable"><h2>DevOps CI/CD Stack</h2></td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="container">
+            <table class="headerResponsiveBottom">
+                <tbody>
+                    <tr>
+                        <td class="JournalTitle"><h3>$applicationName - Build #$buildNumber - $buildResult</h3></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="mySpace"></div>
+              <table cellpadding="15" cellspacing="0" width="100%">
+            <div class="container">
+                <table class="responsive">
+                    <tr><td><b>Build Job:</b></td><td>$applicationName</td></tr>
+                    <tr><td><b>Source Branch:</b></td><td>$sourceBranch</td></tr>
+                    <tr><td><b>Build #:</b></td><td>$buildNumber</td></tr>
+                    <tr><td><b>Developer:</b></td><td>$developer</td></tr>
+                </table>
+            </div>
+             <div class="mySpace"></div>
+          <div class="container">
+           <tr>
+            <td align="left" width="100%"><font face="Tahoma, sans-serif" size="2"><strong>View this request in Jenkins Enterprise by clicking the button below</strong></font></td>
+          </tr>
+          <tr>
+                   <td width="100%">&nbsp;<!--[if mso]>
+-          <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="$buildUrl" style="height:50px;v-text-anchor:middle;width:150px;" arcsize="5%" strokecolor="#56A1D5" fillcolor="#56A1D5">
+-            <w:anchorlock/>
+-            <center style="color:#ffffff;font-family:Helvetica, Arial,sans-serif;font-size:16px;">Jenkins Enterprise &rarr;</center>
+-          </v:roundrect>
+-        <![endif]--></td>
+            </tr>
+        </div>
+               
+          <div style="color: #b9b9b9; font-size: 10pt; text-align: right; margin-top: 15px; margin-bottom: 20px;">
+          </div>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>
